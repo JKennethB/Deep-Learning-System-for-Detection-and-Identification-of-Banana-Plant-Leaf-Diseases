@@ -119,7 +119,7 @@ with st.expander("View Prediction History"):
         with col1:
             # Optional: Download button for the full history
             st.download_button(
-                label="Download Full Global History",
+                label="Download History",
                 data=df.to_csv(index=False),
                 file_name="global_banana_history.csv",
                 mime="text/csv",
@@ -127,7 +127,7 @@ with st.expander("View Prediction History"):
         
         with col2:
             # Optional: Clear history button
-            if st.button("Clear Global History"):
+            if st.button("Clear History"):
                 os.remove("global_history.csv")
     else:
         st.info("Nothing recorded yet.")
