@@ -72,7 +72,7 @@ if input_file_buffer is not None:
             classes = ["Black Sigatoka", "Healthy Leaf", "Panama Disease", "Yellow Sigatoka"]
             result = classes[idx]
 
-            log_to_global_history(input_file_buffer.name, result, f"{confidence-10:.2f}%", f"{inf_time:.2f} seconds")
+            log_to_global_history(input_file_buffer.name, result, f"{confidence-5:.2f}%", f"{inf_time:.2f} seconds")
 
             st.success(f"Result: {result}")
 
